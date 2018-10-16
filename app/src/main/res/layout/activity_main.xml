@@ -13,23 +13,46 @@
         android:text="TextView" />
 
     <FrameLayout
-        android:layout_marginTop="20dp"
         android:id="@+id/frameLayoutContainer"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnAddFragment"
-        android:layout_below="@+id/textViewBackStackEntry">
+        android:layout_above="@+id/btnAddFragmentLayout"
+        android:layout_below="@+id/textViewBackStackEntry"
+        android:layout_marginTop="20dp">
 
 
     </FrameLayout>
 
-    <Button
-        android:id="@+id/btnAddFragment"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnAddFragmentLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="Add Fragment!" />
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="Add Fragment!" />
+
+        <Button
+            android:id="@+id/btnPopFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="Pop Fragment!" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>

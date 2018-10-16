@@ -13,7 +13,12 @@ public class ThirdFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.third_fragment,container,false);
+        View v = inflater.inflate(R.layout.third_fragment, container, false);
         return v;
+    }
+
+    @Override
+    public String toString() {
+        return ThirdFragment.class.getSimpleName();
     }
 }
